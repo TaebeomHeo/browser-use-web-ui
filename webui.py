@@ -1,3 +1,10 @@
+import sys
+
+# 커스텀 모듈 경로를 sys.path에서 제거
+custom_path = '/Users/bombbie/Developer/browser-use-fork'
+if custom_path in sys.path:
+    sys.path.remove(custom_path)
+
 from dotenv import load_dotenv
 load_dotenv()
 import argparse
